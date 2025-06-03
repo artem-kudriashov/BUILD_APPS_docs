@@ -4,7 +4,7 @@ While developing applications for Ecwid, you can decide to keep your app private
 
 ### Private Ecwid apps
 
-When you start working with Ecwid API, the first step is to get a custom app named like **“Custom app for myemail@example.com #1”**. Such an app is only available in your store, it cannot be installed in other stores or become paid and published. Because of that, you can simply copy app's access tokens and start working with Ecwid API.&#x20;
+When you start working with the Ecwid API, the first step is to get a custom app named like **“Custom app for myemail@example.com #1”**. Such an app is only available in your store, it cannot be installed in other stores or become paid and published. Because of that, you can easily get access tokens and manage store data with REST API calls.&#x20;
 
 Access your custom apps through the [app dashboard](https://my.ecwid.com/#develop-apps) in the Ecwid admin.
 
@@ -19,7 +19,7 @@ If you have several stores or develop an app for our reseller partners, we can h
 You can offer the app to millions of Ecwid users if you decide to publish it in the [Ecwid App Market](https://www.ecwid.com/apps). They can find your public app in several ways:
 
 * On the App Market website.
-* In the App Market integrated into the Ecwid admin.
+* In the App Market, integrated into the Ecwid admin.
 * Through related articles in the Help Center
 * In search engines' results.&#x20;
 
@@ -27,21 +27,10 @@ Public applications can be free or provide users with different payment options 
 
 Read more on [monetizing your public app](../launch-apps/monetize-public-apps.md).
 
-You can target your audience by limiting a public app to specific countries and App Market categories. For example, if you build a payment integration for the EMEA region, country restrictions will ensure the app won’t be installed by users who can’t use it and the payment category make the app appear right on the Payments page in Ecwid admin.
+You can target your audience by limiting a public app to specific countries and App Market categories. For example, if you build a payment integration for the EMEA region, country restrictions will ensure the app won’t be installed by users who can’t use it. The payment category makes the app appear right on the Payments page in the Ecwid admin.
 
-Learn more about [launching apps](broken-reference).
+Learn more about [launching apps](../launch-apps/public-apps-overview.md).
 
-\
+Ecwid apps also allow developers to easily distribute custom functionality, as the same app can be installed in several stores or even become public. Users can search publicly available apps in the marketplace called [Ecwid App Market](https://www.ecwid.com/apps).
 
-
-
-
-
-
-
-
-
-
-Ecwid apps also allow developers to easily distribute custom functionality, as the same app can be installed in several stores or even become public. Users can search publically available apps in the marketplace called [Ecwid App Market](https://www.ecwid.com/apps).
-
-We always welcome new apps for our App Market. Check out how you can monetize on your app idea in [Launch apps](broken-reference)
+We always welcome new apps to our app market. Check out how you can monetize on your app idea in [Launch apps](../launch-apps/monetize-public-apps.md)
