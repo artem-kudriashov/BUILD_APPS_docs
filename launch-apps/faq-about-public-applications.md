@@ -28,7 +28,8 @@ A: As long as it doesn't violate your agreements with the store owner, you can p
 
 #### Q: How long does it take to review an app submission request?
 
-A: Typically, the review of an app submission request takes 1-2 business days. [Submit your app idea](https://portal.ecwid.com/en-us/app-market-request)
+A: Typically, the review of an app submission request takes 1-2 business days. \
+[Submit your app idea](https://portal.ecwid.com/en-us/app-market-request)
 
 #### Q: What do I need to have before onboarding and launching my app?
 
