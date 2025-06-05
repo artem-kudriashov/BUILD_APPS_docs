@@ -21,6 +21,7 @@
 ## Launch apps
 
 * [Public apps overview](launch-apps/public-apps-overview.md)
+* [FAQ about public applications](launch-apps/faq-about-public-applications.md)
 * [Monetize public apps](launch-apps/monetize-public-apps.md)
 * [Steps to go live with a public app](launch-apps/steps-to-go-live-with-a-public-app.md)
 * [Native and external apps](launch-apps/native-and-external-apps/README.md)

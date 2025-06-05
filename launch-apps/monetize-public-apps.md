@@ -2,6 +2,10 @@
 
 When you build a public application for Ecwid App Market, you get access to thousands of our users who can become your clients. While choosing pricing options, check out Ecwid billing.
 
+{% hint style="success" %}
+During onboarding we'll contact you to discuss monetization scheme if necessary.
+{% endhint %}
+
 ### Why sell the app with Ecwid billing
 
 * Ecwid handles payments: Set a monthly price for your app, and that's it. Ecwid billing will take care of the rest.
