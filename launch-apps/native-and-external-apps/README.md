@@ -49,29 +49,28 @@ where:
 
 Keep in mind that the **code** is short-lived. It must be exchanged for an _access token_ by your app in a few minutes. It can also be used only once in the exchange call.
 
-#### Exchange `code` for an access token
+#### Exchange `code` and `store_id` pair for an access token
 
 This part of the authentication process must be invisible to users. While the **code** is exchanged in the background, users are still sitting on the **redirectUrl**.
 
-Exchange happens through a POST request  `https://my.ecwid.com/api/oauth/token` with a URL-encoded request body. All params in the request body are **required** and are encoded with the `Content-Type: application/x-www-form-urlencoded` header.
+Exchange happens through a POST request  `https://my.ecwid.com/api/oauth/token` with a URL-encoded request body. All params in the path and request body are **required** and are encoded with the `Content-Type: application/x-www-form-urlencoded` header.
 
 Example of the exchange request:
 
 ```http
-POST /api/oauth/token HTTP/1.1
+POST /api/oauth/token/{store_id} HTTP/1.1
 Host: my.ecwid.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id={client_id}&client_secret={client_secret}&code={code}&store_id={store_id}&redirect_uri={redirect_uri}&grant_type=authorization_code
+client_id={client_id}&client_secret={client_secret}&code={code}&redirect_uri={redirect_uri}&grant_type=authorization_code
 ```
 
 ```curl
-curl --location 'https://my.ecwid.com/api/oauth/token' \
+curl --location 'https://my.ecwid.com/api/oauth/token/{store_id}' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id={client_id}' \
 --data-urlencode 'client_secret={client_secret}' \
 --data-urlencode 'code={code}' \
---data-urlencode 'store_id={store_id}' \
 --data-urlencode 'redirect_uri={redirect_uri}' \
 --data-urlencode 'grant_type=authorization_code'
 ```
@@ -82,7 +81,7 @@ curl --location 'https://my.ecwid.com/api/oauth/token' \
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://my.ecwid.com/api/oauth/token',
+  CURLOPT_URL => 'https://my.ecwid.com/api/oauth/token/{store_id}',
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
@@ -90,7 +89,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
   CURLOPT_CUSTOMREQUEST => 'POST',
-  CURLOPT_POSTFIELDS => '{client_id}&client_secret={client_secret}&code={code}&store_id={store_id}&redirect_uri={redirect_uri}&grant_type=authorization_code',
+  CURLOPT_POSTFIELDS => '{client_id}&client_secret={client_secret}&code={code}&redirect_uri={redirect_uri}&grant_type=authorization_code',
   CURLOPT_HTTPHEADER => array(
     'Content-Type: application/x-www-form-urlencoded'
   ),
@@ -103,9 +102,13 @@ echo $response;
 
 ```
 
+Path params:
+
+<table><thead><tr><th width="149.9140625">Parameter</th><th width="149.54296875">Required</th><th>Description</th></tr></thead><tbody><tr><td>store_id</td><td>required</td><td>The <code>store_id</code> received on the previous step.</td></tr></tbody></table>
+
 Request body params:
 
-<table><thead><tr><th width="149.9140625">Parameter</th><th width="149.54296875">Required</th><th>Description</th></tr></thead><tbody><tr><td>client_id</td><td>required</td><td><code>client_id</code> of your application. Find it at the bottom of the application <em>Details</em> page on <a href="https://my.ecwid.com/#develop-apps">#develop-apps</a>.</td></tr><tr><td>client_secret</td><td>required</td><td><code>client_secret</code> of your application. Find it at the bottom of the application <em>Details</em> page on <a href="https://my.ecwid.com/#develop-apps">#develop-apps</a>.</td></tr><tr><td>code</td><td>required</td><td>The temporary <code>code</code> received on the previous step.</td></tr><tr><td>store_id</td><td>required</td><td>The <code>store_id</code> received on the previous step.</td></tr><tr><td>redirect_uri</td><td>required</td><td><strong>redirectUrl</strong> of your application.</td></tr><tr><td>grant_type</td><td>required</td><td>Always <code>authorization_code</code>.</td></tr></tbody></table>
+<table><thead><tr><th width="149.9140625">Parameter</th><th width="149.54296875">Required</th><th>Description</th></tr></thead><tbody><tr><td>client_id</td><td>required</td><td><code>client_id</code> of your application. Find it at the bottom of the application <em>Details</em> page on <a href="https://my.ecwid.com/#develop-apps">#develop-apps</a>.</td></tr><tr><td>client_secret</td><td>required</td><td><code>client_secret</code> of your application. Find it at the bottom of the application <em>Details</em> page on <a href="https://my.ecwid.com/#develop-apps">#develop-apps</a>.</td></tr><tr><td>code</td><td>required</td><td>The temporary <code>code</code> received on the previous step.</td></tr><tr><td>redirect_uri</td><td>required</td><td><strong>redirectUrl</strong> of your application.</td></tr><tr><td>grant_type</td><td>required</td><td>Always <code>authorization_code</code>.</td></tr></tbody></table>
 
 #### Receive store ID and access token
 
