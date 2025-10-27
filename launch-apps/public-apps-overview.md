@@ -10,7 +10,7 @@ We have an automated flow where you start with only an idea of an app and end up
 
 Start with the dev version of your app in the free dev environment and test it with us before publishing the app.
 
-<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Start developing with Ecwid</strong></td><td><a href="steps-to-go-live-with-a-public-app.md">steps-to-go-live-with-a-public-app.md</a></td></tr><tr><td><strong>Get revenue</strong></td><td><a href="monetize-public-apps.md">monetize-public-apps.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th></th><th data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Start developing with Ecwid</strong></td><td><a href="steps-to-go-live-with-a-public-app/">steps-to-go-live-with-a-public-app</a></td></tr><tr><td><strong>Get revenue</strong></td><td><a href="monetize-public-apps.md">monetize-public-apps.md</a></td></tr></tbody></table>
 
 
 
