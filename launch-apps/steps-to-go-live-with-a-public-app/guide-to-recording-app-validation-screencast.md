@@ -7,12 +7,12 @@ The following guide will help you create a clear showcase of your app's function
 * Resolution: A minimum resolution of Full HD (1920x1080) is required for optimal clarity.
 * Video Quality: Maintain high bitrate, avoiding pixelation.
 * Audio: Utilize a high-quality microphone to ensure clear audio and minimize background noise.
-* Pro Tip: A smartphone's voice recorder can serve as an effective alternative if a dedicated microphone is unavailable; the audio can be synced with your video later in the editor.
+  * Pro Tip: A smartphone's voice recorder can serve as an effective alternative if a dedicated microphone is unavailable; the audio can be synced with your video later in the editor.
 * Format: Please use the MP4 format.
 * Length: Aim to keep the video under 15 minutes. While thoroughness is important, please edit out or speed up any pauses or extended loading times.
 * Pacing: Speak clearly and at a moderate pace. Move your mouse deliberately to allow us to follow your actions. Highlighting clicks and cursor movements can be very helpful.
 * Language: The app interface and speech on the screen recording must be in English. Subtitles are also available.&#x20;
-* Note: if the service to which your app provides access, or the app itself, is available in foreign languages, you should demonstrate switching the interface language in the recording.
+  * Note: if the service to which your app provides access, or the app itself, is available in foreign languages, you should demonstrate switching the interface language in the recording.
 * Submission: Share your video via a direct download link from a reputable cloud service (e.g., Google Drive, Dropbox). The link must be publicly accessible, free to download, and valid for a minimum of 30 days. Include this link in your App Readiness Form.
 
 ### Screencast Content: Your Script
@@ -34,16 +34,16 @@ The following guide will help you create a clear showcase of your app's function
 * This section is critical for demonstrating your app's operational capabilities.
 * Present each main feature from your App Market description, one by one.
 * The "Show and Tell" Method:
-* State your action: "First, I will demonstrate our bulk price editor."
-* Perform the action: Utilize your app's interface to modify prices for several products.
-* Verify the action (critically important!): Navigate to the Ecwid Control Panel (e.g., Catalog > Products) and confirm that the prices have been successfully updated. This validates your API's functionality.
+  * State your action: "First, I will demonstrate our bulk price editor."
+  * Perform the action: Utilize your app's interface to modify prices for several products.
+  * Verify the action (critically important!): Navigate to the Ecwid Control Panel (e.g., Catalog > Products) and confirm that the prices have been successfully updated. This validates your API's functionality.
 * Third-party integrations (if applicable):
-* Illustrate how your app connects to the external service.
-* Demonstrate data sync between Ecwid and the app/3rd party service by changing some data on one side and showing the change on the other.
-* Remember to provide any necessary test credentials for the third-party service in the 'Comments or questions on installation' field of your App Readiness Form, if this does not violate the agreement on application development with a third-party service. In other cases, a screen recording will suffice.
+  * Illustrate how your app connects to the external service.
+  * Demonstrate data sync between Ecwid and the app/3rd party service by changing some data on one side and showing the change on the other.
+  * Remember to provide any necessary test credentials for the third-party service in the 'Comments or questions on installation' field of your App Readiness Form, if this does not violate the agreement on application development with a third-party service. In other cases, a screen recording will suffice.
 * Showcase your app's error handling and robust behavior in various scenarios: Do not limit your demonstration to ideal situations.
-* Invalid Inputs: Show how your app responds to incorrect input, such as negative numbers in price fields or unusual characters. The app should provide clear error messages and avoid crashing.
-* Common Scenarios: Demonstrate your app's functionality with diverse data types, including free products, products with variations, or large images.
+  * Invalid Inputs: Show how your app responds to incorrect input, such as negative numbers in price fields or unusual characters. The app should provide clear error messages and avoid crashing.
+  * Common Scenarios: Demonstrate your app's functionality with diverse data types, including free products, products with variations, or large images.
 
 #### Step 4: UI/UX & Responsive Design (approximately 1 minute)
 
@@ -60,8 +60,8 @@ The following guide will help you create a clear showcase of your app's function
 * Demonstrate responsible development practices by leaving the store in a clean state.
 * Navigate to Apps > My Apps in the Ecwid Control Panel and uninstall your app.
 * Provide proof of cleanup:
-* Storefront: If your app added any elements to the storefront, revisit it to confirm their removal.
-* Backend: Explain your server's actions upon uninstallation: "When a merchant uninstalls, we receive a webhook from Ecwid. Our system then automatically deletes all their associated data, including their access token, from our database."
+  * **Storefront**: If your app added any elements to the storefront, revisit it to confirm their removal.
+  * **Backend**: Explain your server's actions upon uninstallation: "When a merchant uninstalls, we receive a webhook from Ecwid. Our system then automatically deletes all their associated data, including their access token, from our database."
 
 #### Step 7: Conclusion (approximately 20 seconds)
 
