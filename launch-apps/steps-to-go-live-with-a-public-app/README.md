@@ -28,6 +28,6 @@ With an approved [Request form](https://portal.ecwid.com/en-us/app-market-reques
 
 ### Complete app publishing process
 
-When your app is ready to be published, you can start the **app validation** process, developed to ensure your app meets all requirements. At the end of the app validation, the app gets published and becomes available in the Ecwid App Market.
+When your app is ready to be published, start the **app validation** process to ensure it meets all requirements. At its end, the app gets published and becomes available in the Ecwid App Market.
 
 To get through the validation process more easily, follow the [guide-to-app-validation.md](guide-to-app-validation.md "mention")
