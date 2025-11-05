@@ -25,7 +25,7 @@ The following guide will help you create a clear showcase of your app's function
 
 #### Step 2: Installation & Onboarding (approximately 1 minute)
 
-* Demonstrate the installation process using your private "-dev" app link.
+* Demonstrate the installation process.
 * When the OAuth permissions screen appears, provide a concise explanation for each requested permission.
 * Showcase the initial merchant experience post-installation, including any welcome messages, setup wizards, or configuration pages. Guide us through these initial steps.
 
